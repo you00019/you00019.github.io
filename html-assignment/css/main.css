@@ -1,0 +1,43 @@
+body{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 18px;
+}
+
+header,footer{
+    background-color:gray
+}
+
+.site-title{
+    color:mediumblue
+}
+    
+#my-image{
+    box-shadow:0px 0px 2px 1px black;
+}
+
+ul{
+   list-style-type:square;
+}
+
+li:nth-child(odd){
+ background-color: coral;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:link{
+    background-color: cornflowerblue;
+    border-style:dotted;
+}
+
+a:link,a:visited{
+        color:darkviolet;
+}
+a:hover{
+    background-color: burlywood;
+}
+a:active{
+    background-color:hotpink;
+}

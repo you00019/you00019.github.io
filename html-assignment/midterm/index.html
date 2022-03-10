@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MTM6130 Midterm</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTM6130 Midterm</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-    
+  <main>
+  <!--put all content into wrapper for adaptive layout-->
+  <div class="wrapper">
+  <header>
+  <!--create title's layout-->
+  <h1 class="box1">Lone Starfish</h1>
+  <!--load picture-->
+  <img class="img" src="images/lone-starfish-wide.jpg" alt="starfish">
+  </header>
+  <div>
+  <!--create navigation list-->
+   <nav>
+    <ul>
+     <li class="nav1"><a href="#">HOME</a></li>
+     <li class="nav2"><a href="#">STORY</a></li>
+     <li><a href="#">CONTACT</a></li>
+    </ul>
+   </nav>
+  </div>
+
+   <div>
+   <!--create headling for this article-->
+    <h1 class="intro">Life of a Starfish</h1> 
+   <!--create float in the css-->
+     <img class="container" src="images/lone-starfish.jpg" alt="starfishsmall">
+   <!--create class for paragraph margin adjustment in css-->
+      <p class="paragraph">Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p> 
+    </div>
+
+    <section>
+    <!--create bullet points of starfish-->
+     <h2 class="facts-about">Facts About Starfish</h2>
+      <ul>
+
+       <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
+
+       <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li> 
+       <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li> 
+       <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+      </ul>
+    </section>
+
+    <section>
+    <!--create contact forms for customers to fill in-->
+     <h2 class="contact">Contact to learn more</h2>
+     <form action="newpage.html" method="get">
+     <div>
+     <label for="name">Your Name</label><br>
+     <input type="text" id="name" name="name"><br><br>
+
+     <label for="email">Your Email</label><br>
+     <input type="text" id="email" name="email"><br><br>
+
+     <label for="message">Your Message</label><br>
+     <textarea id="message" name="message"></textarea><br>
+     </div>
+
+    <!--create radio buttons for frequency of website visit-->
+    <h2 class="rating">Would you like to visit the starfish?</h2>
+    <div>
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="website-visit" value="yes">
+
+    <label for="no">No</label>
+    <input type="radio" id="no" name="website-visit" value="no">
+
+    <label for="maybe">Maybe</label>
+    <input type="radio" id="maybe" name="website-visit" value="maybe">
+    </div>
+    <br>
+
+  <div>
+    <!--create submit button-->
+   <button type="Submit">SEND</button>
+   </div>
+   </form>
+   </section>
+   <!--create footer-->
+    <footer>@Lone Starfish</footer>
+  </div>
+ </main>
 </body>
 </html>

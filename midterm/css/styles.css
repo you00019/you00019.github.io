@@ -50,7 +50,7 @@ html{
         text-align: center;
     }
 
-    /* remove underline of navagation link */
+    /* remove underline of navagation links */
     ul a{
         text-decoration: none;
     }
@@ -103,18 +103,18 @@ html{
         margin:10px;
     }
 
-    /* change the width for #name and #email */
+    /* change the width for name and email */
     #name,#email{
         width: 950px;
     }
     
-    /* change the width and height for #message */
+    /* change the width and height for message */
     #message{
         width:950px;
         height:100px;
     }
 
-    /* change the font */
+    /* change the font for website visit frequency questionnaire */
     .rating{
         font-size: 18px;
         font-weight:normal;

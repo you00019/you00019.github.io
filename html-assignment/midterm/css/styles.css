@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after{
+    box-sizing: inherit;
+    }
+
+    /* body set up */
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        }
+    
+    /* webpage color set up */
+    html{
+        background-color: #aad4cf;
+    }
+
+    /* apply wrap */
+    .wrapper{
+        max-width: 1000px;
+        margin:0px auto;
+        background-color:#d4e9e7;
+    }
+    
+    /* adjust picture width */
+    .img{
+        max-width: 1000px;
+    }
+
+    /* adjust title layout */
+    .box1{
+        position:relative;
+        top: 300px;
+        left: 0px;
+        color:white;
+        font-size: 3rem;
+        text-align: center;
+    }
+    
+    /* navigation display */
+    nav li{
+        font-size: 1.5rem;
+        font-weight: normal;
+        display:inline-block;
+        width: 600px;
+        inline-size: 310px;
+        text-align: center;
+    }
+
+    /* remove underline of navagation link */
+    ul a{
+        text-decoration: none;
+    }
+
+    /* change navigation link color */
+    a:link,a:visited{
+        color:black;    
+    }
+
+    /* add border beside two nagivation links */
+    .nav1,.nav2{
+        border-right: 1px solid black;
+    }
+    
+    /* change the layout of heading 1 */
+    .intro{
+        margin:10px;
+        font-size: 2rem;
+    }
+
+    /* apply float */
+    .container{
+       width: 250px;
+       margin: 5px;
+       float:left;
+       padding-left:5px;
+       padding-right: 10px;
+    }
+    
+    /* change the margin for paragraph */
+    .paragraph{
+        font-size: 19px;
+        margin:10px;
+    }
+
+    /* change the margin and size for heading 2 */
+    .facts-about,.contact{
+        font-weight:normal;
+        margin:10px;
+    }
+    
+    /* form layout */
+    form{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-style: outset;
+        border-width: 2px;
+        border-color: black;
+        margin:10px;
+    }
+
+    /* change the width for #name and #email */
+    #name,#email{
+        width: 950px;
+    }
+    
+    /* change the width and height for #message */
+    #message{
+        width:950px;
+        height:100px;
+    }
+
+    /* change the font */
+    .rating{
+        font-size: 18px;
+        font-weight:normal;
+    }
+
+    /* arrange the layout for footer */
+    footer{
+    text-align:right;
+    margin: 10px;
+    }
+

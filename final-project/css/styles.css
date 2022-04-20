@@ -455,7 +455,7 @@ table{
 
 iframe{
 	width:100%;
-	height: 600px;
+	height: 400px;
 }
 
 /* footer: at mobile, it has the whole 100% width, with words in color */
@@ -547,33 +547,139 @@ h1+p{
   font-size: 15px;
 }
 	
-/* use grid to make table changes, also make title and paragraphs smaller */
+/* desktop about us: use grid to make table changes, also make title and paragraphs smaller */
 
 #about-us{
   display:grid;
   grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr;
 }
-	
 .about-us{
   display:grid;
-  grid-column: 1 / 2;
+  width:100%;
 }
-	
+
 .about-us-intro{
-  display:grid;
-  grid-column: 2 / 3;
+  grid-column: 2/3;
 }
 	
 #about-us h2{
   font-size: 40px;
-	}
+}
 	
 .p1, .p2{
   font-size: 15px;
 }
 
+/* desktop our services: use grid to make layout */
+.services{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap:10px;
+}
 
+.digital{
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+}
 
+.marketing {
+    grid-column: 4 / 7;
+	grid-row: 1 / 2;
+}
 
+.video {
+   grid-column: 1 / 3;
+   grid-row: 2 / 3;
+}
 
+.web {
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+}
+
+.print {
+  grid-column: 5 / 7;
+  grid-row: 2 / 3;
+}
+
+.our-services-detail h2{
+  font-size: 40px;
+}
+
+.digital h3, .marketing h3, .video h3,
+.video h3, .web h3, .print h3{
+  font-size: 40px;
+}
+
+.digital p, .marketing p, .video p,
+.video p, .web p, .print p{
+  font-size: 20px;
+}
+
+/* desktop our visions: change font sizes for title and paragraph, change paddings and picture height*/
+.our-vision{
+  padding-left:20px;
+  height: 350px;
+}
+
+.ourvision h3{
+  font-size: 40px;
+}
+
+.ourvision p{
+  font-size: 20px;
+}
+
+/* desktop our team: change heading font size,use grid to do the layout,*/
+
+.team h2{
+  font-size: 40px;
+}
+
+.joininfo,
+.bobrite{
+  display: grid;
+  grid-template-columns: 1fr 1fr;	
+}
+
+.john{
+	grid-column: 1/2;
+	grid-row:1/4;
+}
+
+.john p{
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.bob{
+	grid-column: 2/3;
+	grid-row: 1/4;
+}
+
+/* desktop contact us: change heading font size,use grid to do the layout for message and location,*/
+.contact h2{
+	font-size: 40px;
+}
+
+.contact h3,
+.location h3{
+	font-size: 30px;
+}
+
+.contact-detail{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.location{
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.operation-hour{
+	grid-column: 1/3;
 }

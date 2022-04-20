@@ -10,7 +10,7 @@
   <!--set google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!--link to css-->
     <link href="css/styles.css" rel="stylesheet">
 </head>
@@ -23,9 +23,9 @@
        <!--put navagation content together for adaptive layout-->
        <div class="navigation">
           <!--create navigation list-->
-          <nav class="navbar">
+          <nav class="navlist">
             <img class="logo" src="images/logo.png" alt="logo pic">
-             <ul>
+             <ul class="nav-list">
                <li class="nav1"><a href="#">Home</a></li>
                <li class="nav2"><a href="#">About Us</a></li>
                <li class="nav3"><a href="#">Services</a></li>
@@ -34,7 +34,7 @@
              </ul>
              <!--create search bar-->
              <div class="search">
-               <input type="text" placeholder="Search..">    
+               <input type="text" placeholder="Search..">  
                <i class="fa-solid fa-magnifying-glass"></i>
              </div>
           </nav>
@@ -42,12 +42,11 @@
   
        <!--create banner content-->     
        <div class="banner">
-        <img class="main-banner" src="images/main-banner.jpg" alt="main banner pic">
          <div class="welcome">
           <h1>Welcome to Three Star Media</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dicta fugiat eaque voluptate recusandae. Atque voluptates unde nisi dolor maxime nam numquam non sed vel blanditiis, aut ut asperiores. Asperiores?</p>
             <!--create link and caret-->
-            <a href="#">Connent with us</a>
+            <a href="#" class="connect">Connent with us</a>
             <i class="fa-solid fa-caret-right"></i>
          </div>
        </div>
@@ -60,8 +59,8 @@
          <img class="about-us" src="images/about-us.jpg" alt="about us pic">
             <div class="about-us-intro">
                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores inventore reprehenderit culpa molestiae, ut enim dolor! Repellat laudantium, tenetur enim vel omnis possimus veniam nulla at, sequi aut nisi laboriosam? </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa labore ipsam, molestias dolorum accusantium reiciendis, quas debitis sint ullam cum laboriosam quod, corrupti aliquam impedit? Illum quis cupiditate adipisci!</p>
+                <p class="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores inventore reprehenderit culpa molestiae, ut enim dolor! Repellat laudantium, tenetur enim vel omnis possimus veniam nulla at, sequi aut nisi laboriosam? </p>
+                <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa labore ipsam, molestias dolorum accusantium reiciendis, quas debitis sint ullam cum laboriosam quod, corrupti aliquam impedit? Illum quis cupiditate adipisci!</p>
             </div>
       </div>
    </section>
@@ -76,7 +75,7 @@
                      <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quod fugiat illo expedita deserunt ipsam quia libero similique maxime mollitia ratione iusto quas unde pariatur corrupti, autem, veritatis quisquam. Quasi.</p>
                           <!--create link and caret-->
-                          <a href="#">Digital Plans</a>
+                          <a href="#" class="digital-plans">Digital Plans</a>
                             <i class="fa-solid fa-caret-right"></i>
              </div>
 
@@ -86,7 +85,7 @@
                      <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae maiores vel reprehenderit eos? Quam ratione cumque deleniti. Harum quidem ipsum adipisci iste, reiciendis tempore nisi unde sed amet beatae.</p>
                            <!--create link and caret-->
-                           <a href="#">Marketing Plans</a>
+                           <a href="#" class="marketing-plans">Marketing Plans</a>
                              <i class="fa-solid fa-caret-right"></i>
               </div>
 
@@ -96,7 +95,7 @@
                      <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae maiores vel reprehenderit eos? Quam ratione cumque deleniti. Harum quidem ipsum adipisci iste, reiciendis tempore nisi unde sed amet beatae.</p>
                            <!--create link and caret-->
-                           <a href="#">Video Plans</a>
+                           <a href="#" class="video-plans">Video Plans</a>
                              <i class="fa-solid fa-caret-right"></i>                               
               </div>   
               
@@ -106,7 +105,7 @@
                      <h3>Web Development</h3>
                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae maiores vel reprehenderit eos? Quam ratione cumque deleniti. Harum quidem ipsum adipisci iste, reiciendis tempore nisi unde sed amet beatae.</p>
                           <!--create link and caret-->
-                          <a href="#">Web Plans</a>
+                          <a href="#" class="web-plans">Web Plans</a>
                              <i class="fa-solid fa-caret-right"></i>       
               </div>
 
@@ -116,7 +115,7 @@
                     <h3>Print</h3>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae maiores vel reprehenderit eos? Quam ratione cumque deleniti. Harum quidem ipsum adipisci iste, reiciendis tempore nisi unde sed amet beatae.</p>
                          <!--create link and caret-->
-                         <a href="#">Print Plans</a>
+                         <a href="#" class="print-plans">Print Plans</a>
                            <i class="fa-solid fa-caret-right"></i>   
              </div>
       </div>
@@ -124,12 +123,11 @@
     
     <!--create our vision content-->
     <section class="our-vision">
-       <div class="ourvision">
-         <img class="vision" src="images/vision.jpg" alt="vision pic">
+       <div class="ourvision">   
             <h3>Our Vision</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores recusandae maiores vel reprehenderit eos? Quam ratione cumque deleniti. Harum quidem ipsum adipisci iste, reiciendis tempore nisi unde sed amet beatae.</p>
                 <!--create link and caret-->
-                <a href="#">Learn More</a>
+                <a href="#" class="learn-more">Learn More</a>
                   <i class="fa-solid fa-caret-right"></i>   
        </div>
     </section>
@@ -138,12 +136,12 @@
     <section class="team">
         <div class="team-intro">
           <h2>Our Team</h2>
+              <div class="joininfo">
              <img class="john" src="images/john.jpg" alt="john pic">
-             <div class="johnintro">
                <h3>John Doe</h3>
                  <h4>CEO and Co-owner</h4>
                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem cum possimus ipsam quas amet, laudantium deserunt fugiat blanditiis delectus ullam error fuga, neque quam dolor quibusdam veritatis beatae ipsum culpa!</p>
-             </div>
+              </div>
 
            <!--create team content2-->
            <div class="bobrite">
@@ -180,34 +178,33 @@
                    </form>
              </div>
 
+   <!--create operation table-->       
+            <div class="operation-hour">
+              <h3>Hours of operation</h3>
+                <table>
+                   <thead>
+                      <tr>
+                        <th>Days</th>
+                        <th>Hours</th>
+                      </tr>
+                   </thead>
+                      <tbody>
+                          <tr>
+                           <td>Monday - Friday</td>
+                           <td>9 AM - 6 PM</td>
+                           </tr>
+                           <tr>
+                           <td>Saturday - Sunday</td>
+                           <td>Closed</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                 </div>
+
             <!--create address-->
             <div class="location">
                  <h3>Location</h3>
                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944738567608!2d-75.75712548478283!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1649185654851!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-            <!--create operation table-->       
-            <div class="operation-hour">
-               <h3>Hours of operation</h3>
-                 <table>
-                    <thead>
-                       <tr>
-                         <th>Days</th>
-                         <th>Hours</th>
-                       </tr>
-                    </thead>
-                       <tbody>
-                           <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                           </tr>
-                      </tbody>
-                 </table>
             </div>
         </div>
    </section>

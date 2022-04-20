@@ -1,3 +1,586 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html{
+    box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after{
+    box-sizing: inherit;
+    }
+
+/* body set up */
 body{
-    background-color: #369;
+    font-family: 'Open Sans';
+    font-size: 25px;
+}
+
+ /* apply wrap */
+.wrapper{
+    max-width: 1200px;
+    margin:0px auto;
+}
+
+/* header: start mobile with logo at top left and nav>li structure is in a column. 
+Search bar go 100% width. */
+
+.logo{
+	padding-left: 0%;
+}
+
+.navigation{
+	background-color: #222;
+	padding-inline: 20px;
+}
+
+.navlist{
+	background-color: #c78c06;
+}
+
+.nav1{
+	display:flex;
+	justify-content: center;
+	font-size: 30px;
+	padding: 20px;
+}
+
+
+.nav2, .nav3, .nav4, .nav5{
+	display:flex;
+	justify-content: center;
+	font-size: 30px;
+	padding: 20px;
+	background-color: #222;
+}
+
+/* remove underline of navagation links */
+ul a{
+    text-decoration: none;
+}
+
+/* change navigation list color */
+.nav1 a:link,
+.nav1 a:visited {
+   color: black;
+}
+
+.nav2 a:link,
+.nav2 a:visited{
+   color: #c78c06;
+}
+
+.nav3 a:link,
+.nav3 a:visited{
+	color: #c78c06;
+}
+
+.nav4 a:link,
+.nav4 a:visited{
+	color: #c78c06;
+}
+
+.nav5 a:link,
+.nav5 a:visited{
+	color: #c78c06;
+}
+
+/* navigation search bar adjustments */
+.search{
+	background-color: #222;
+}
+
+.search input{
+	width: 90%; 
+	height: 55px;
+}
+
+.fa-solid{
+	color:#c78c06;
+    height: 50px;
+	border-style:solid;
+    border-width:3px;
+	padding: 6px 6px;
+}
+
+/* welcome: at mobile, this has a full width background image with a 
+semi-transparent structure in the middle that holds the content.
+At desktop, the content structure is no longer edge to edge and is 
+now centered. */
+
+.banner{
+  background-image:url(../images/main-banner.jpg);
+  height: 600px;
+  display:flex;
+  flex-direction: column;
+}
+	
+.welcome{
+  background-color: rgba(0,0,0,0.6);
+  max-width:1200px;
+  height: 700px;
+  border: 1px solid; 
+  margin-top: 30px;
+}
+	
+h1{
+  font-size: 90px;
+  font-weight: 600;
+  color:white;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+	
+h1+p{
+  color: white;
+  padding-top:30px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+	
+.connect{
+  padding: 25px;
+  background-color: #c78c06;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  margin-left:20px;
+}
+		
+.fa-caret-right{
+  padding:10px;
+  margin-left: 20px;
+  color:#222;
+  font-size: 30px;
+}
+
+
+
+/* about us: at mobile, this section's picture is above paragraph,
+title and paragraph have spaces in between, two paragraphs also have spaces*/
+
+#about-us{
+	background-color:#ffe6ac;
+	padding-bottom: 60px;
+}
+
+#about-us h2{
+	font-size: 80px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.about-us{
+    width: 100%;
+	padding-top:20px;
+	padding-inline: 20px;
+}
+
+.p1, .p2{
+	padding-top:30px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	font-size: 30px;
+  }
+
+/* Our services: at mobile, digital pic is on the top, followed by tilte and paragraph, tile and paragraph have spaces in between*/
+
+.our-services-detail h2{
+	font-size: 80px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.digital-pic,
+.marketing-pic,
+.video-pic,
+.web-pic,
+.print-pic{
+  width: 100%;
+}
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
+  background-color: #ffe6ac;
+}
+
+.digital h3,
+.marketing h3,
+.video h3,
+.web h3,
+.print h3{
+	font-size: 60px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.digital p,
+.marketing p,
+.video p,
+.web p,
+.print p{
+	padding-top:30px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+	font-size: 30px;
+}
+
+.digital-plans,
+.marketing-plans,
+.video-plans,
+.web-plans,
+.print-plans{
+	background-color: black;
+	margin-left: 20px;
+    margin-bottom:50px;
+	display:inline-block;
+    padding: 25px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.our-services a:link,
+.our-services a:visited{
+	color: white;
+}
+
+/* our vision: at mobile,this has a full width background image with a 
+that holds the content. */
+.our-vision{
+	height: 500px;
+	background-image:url(../images/vision.jpg);
+	background-size: 100% 100%;
+	padding-bottom: 20px;
+    margin-left: -40px;
+	width: 1300px;
+	margin-top: 20px;
+  }
+
+.our-vision h3{
+	color: white;
+	font-size:60px;
+	font-weight: 800;
+	padding-top: 40px;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+
+.our-vision p{
+	color:white;
+	padding-left:20px;
+	font-size: 28px;
+	padding-bottom: 50px;
+}
+
+.learn-more{
+	background-color: rgb(12,42,71);
+	margin-left: 20px;
+    margin-bottom:10px;
+	display:inline-block;
+    padding: 60px;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	border-style:solid;
+    border-width:3px;
+	border-color: #ffe6ac;
+  }
+
+/* our team: at mobile, pictures have 100% width, there are so spaces between name and picture, undernath of title, there is one horizontal line. Line, and paragraph has some paddings  */
+
+.team h2{
+	font-size: 80px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.john, .bob{
+	width:100%;
+}
+
+.joininfo, .bobrite{
+    background-color: #ffe6ac;
+}
+
+.team h3{
+	font-size: 60px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.team h4{
+	font-size: 30px;
+	font-weight: 800;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	margin: 8px 12px 8px 10px;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #c78c06;
+}
+
+.team p{
+	padding-left:20px;
+	font-size: 28px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	
+}
+
+/* contact us: at mobile, all 3 fill in text columns needed to be 100%
+width, hours of operation should add color on days and hours columns, and it has 
+100% width, location should be 100% width*/
+
+.contact h2{
+	font-size: 80px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+.contact h3{
+	font-size: 60px;
+	font-weight: 800;
+	padding-left: 20px;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+
+form{
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin:10px;
+}
+
+#name,
+#email {
+  width: 100%;
+}
+
+#message{
+	width:100%;
+	height:200px;
+}
+
+button{
+	background-color: #222;
+	color: #c78c06;
+	font-size: 20px;
+	padding: 15px;
+}
+
+table{
+	width: 100%;
+	height: 10px; 
+	border: 1px solid #222;
+	margin: 0 auto;
+	}
+	
+	th{
+	height: 50px;
+	border: 1px solid #222;
+	background-color: #ffe6ac;
+	text-align: center;
+	padding-top: 10px;
+	}
+	
+	
+	td{
+	height: 50px;
+	border: 1px solid #222;
+	text-align: left;
+	padding-left: 10px;
+	}
+
+iframe{
+	width:100%;
+	height: 600px;
+}
+
+/* footer: at mobile, it has the whole 100% width, with words in color */
+
+footer{
+	width:100%;
+	height: 150px;
+	background-color:#222;
+	color: #c78c06;
+}
+
+footer p{
+	padding-left: 20px;
+	padding-top: 30px;
+}
+
+/* Desktop header: all elements go into a single row so I will use flex */
+@media screen and (min-width: 760px){
+.navlist, 
+.nav-list{
+  display: flex;
+  align-content: space-between;
+}
+		
+.navlist{
+  background-color: #222;
+}
+		
+.logo{
+  padding-left: 30px;
+  padding:20px;
+}
+		
+.nav1 a:link,
+.nav1 a:visited {
+  background-color: #c78c06;
+  border-style:solid;
+  border-width:20px;
+  border-color: #c78c06;
+  padding: 10px;
+}
+		
+.nav2, a:link,
+.nav2, a:visited{
+  padding-top: 25px;
+}
+		
+.nav3, a:link,
+.nav3, a:visited{
+  padding-top: 25px;
+}
+		
+.nav4, a:link,
+.nav4, a:visited{
+  padding-top: 25px;
+}
+		
+.nav5, a:link,
+.nav5, a:visited{
+  padding-top: 25px;
+}
+		
+.search input{
+  width: 74%; 
+}
+		
+.search{
+  padding-top: 40px;
+}
+
+/* desktop banner: change the grey box size,change h1 font size */
+.welcome{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+	
+h1{
+  font-size: 75px;
+  font-weight: 600;
+}
+	
+h1+p{
+  font-size: 15px;
+}
+	
+.connect{
+  font-size: 15px;
+}
+	
+/* use grid to make table changes, also make title and paragraphs smaller */
+
+#about-us{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+	
+.about-us{
+  display:grid;
+  grid-column: 1 / 2;
+}
+	
+.about-us-intro{
+  display:grid;
+  grid-column: 2 / 3;
+}
+	
+#about-us h2{
+  font-size: 40px;
+	}
+	
+.p1, .p2{
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 }

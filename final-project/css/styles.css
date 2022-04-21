@@ -70,7 +70,6 @@ body{
 }
 
 /* Mobile header: logo at top left and nav>li structure is in a column. */
-
 .logo{
   padding-left: 0%;
 }
@@ -542,8 +541,7 @@ h1+p{
   font-size: 15px;
 }
 	
-/* Desktop about us: use grid to make table changes, also make title and paragraphs smaller */
-
+/* Desktop about us: use flex to make layout changes, also make title and paragraphs' fonts smaller */
 .about-us-details{
   display:flex;
 }
@@ -627,7 +625,6 @@ h1+p{
 }
 
 /* desktop our team: change heading font size,use grid to do the layout,*/
-
 .team h2{
   font-size: 40px;
 }
@@ -653,7 +650,7 @@ h1+p{
 	grid-row: 1 / 4;
 }
 
-/* desktop contact us: change heading font size,use grid to do the layout for message and location,*/
+/* desktop contact us: change heading font size,use grid to do the layout */
 .contact h2{
 	font-size: 40px;
 }
